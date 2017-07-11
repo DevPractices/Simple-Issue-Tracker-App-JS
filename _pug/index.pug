@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+   head
+      meta(charset="utf-8")
+      meta(name="viewport", content="width=device-width, initial-scale=1.0")
+      link(rel="stylesheet", type="text/css", href="styles/main.css")
+      title Issue Tracker
+   body
+      .container
+         header
+            span.heading Issue Tracker
+            span.legal <b>{one</b>and<b>zero}</b>
+            span.cta-desc Add New Issue
+         .form-container
+            form#addNewIssueForm
+               label(for="productName") Product Name
+               input(type="text", name="productName", id="productName")
+               label(for="issueDescription") Issue Description
+               input(type="text", name="issueDescription", id="issueDescription")
+               label(for="issueSeverity") Issue Severity
+               select(id="issueSeverity", name="issueSeverity")
+                  option(value="low") Low
+                  option(value="medium") Medium
+                  option(value="high") High
+               label(for="issueOwner") Issue Owner
+               input(type="text", name="issueOwner", id="issueOwner")
+               button Add
+      // JS Scripts start
+      script(type="text/javascript", src="http://chancejs.com/chance.min.js")
+      script(type="text/javascript", src="scripts/script.js")
+      // JS Scripts end

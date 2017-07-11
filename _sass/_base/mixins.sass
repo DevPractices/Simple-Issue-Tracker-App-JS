@@ -1,0 +1,21 @@
+@mixin whs($w,$h)
+	width: $w
+	max-width: $w
+	min-width: $w
+	height: $h
+	max-height: $h
+	min-height: $h
+
+@mixin wh($w,$maw,$miw,$h,$mah,$mih)
+	width: $w
+	max-width: $maw
+	min-width: $miw
+	height: $h
+	max-height: $mah
+	min-height: $mih
+
+@mixin df($fd,$jc,$ai)
+	display: flex
+	flex-direction: $fd
+	justify-content: $jc
+	align-items: $ai
