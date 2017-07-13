@@ -72,3 +72,60 @@ html, body
 				cursor: pointer
 				&:hover
 					box-shadow: inset 2px 2px 6px rgba(#000, 0.5)
+#issues-container
+	@include whs(60vw,auto)
+	margin: 0 auto 10vh auto
+	font-family: 'Quicksand', sans-serif
+	.issue
+		@include whs(100%,auto)
+		@include df(column,center,flex-start)
+		background-color: rgb(0, 11, 33)
+		padding: 0.75vmax
+		margin: 0 auto 0.5vmax auto
+		color: #fff
+		.id-status, .issue-severity-owner
+			@include whs(100%,auto)
+			@include df(row,space-between,center)
+			span.id
+				cursor: pointer
+				color: rgb(50, 99, 184)
+				text-decoration: underline
+				font-size: 1em
+			span.status
+				text-align: center
+				width: 10%
+				display: block
+				background-color: rgb(0, 35, 71)
+				border-radius: 5px
+				padding: 0.25vmax
+				color: #fff
+			span.issue-severity, span.issue-owner
+				border-bottom: 1px solid red
+				border-left: 1px solid red
+				border-right: 1px solid red
+				display: block
+				width: 15%
+				text-align: center
+				padding: 0.25vmax
+				font-weight: bold
+		span.product-name
+			display: block
+			font-size: 1.5em
+			padding: 0.5vmax
+		span.issue-desc
+			width: 100%
+			padding: 0.5vmax
+			margin: 0.25vmax auto
+			display: block
+			background-color: rgb(0, 35, 71)
+footer
+	@include whs(100vw,auto)
+	position: fixed
+	bottom: 0
+	left: 0
+	right: 0
+	text-align: center
+	padding: 0.25vmax
+	background-color: rgb(59, 60, 184)
+	color: #fff
+	font-family: "Quicksand", sans-serif

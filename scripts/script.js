@@ -1,0 +1,1 @@
+var fetchIssues=function(){var e=JSON.parse(localStorage.getItem("issues")),s=document.getElementById("issues-container");s.innerHTML="";for(var t=0;t<e.length;t++){e[t].id,e[t].productName,e[t].issueDescription,e[t].issueSeverity,e[t].issueOwner,e[t].issueStatus}};
