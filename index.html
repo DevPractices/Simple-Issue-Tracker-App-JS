@@ -16,23 +16,18 @@
           <label for="issueDescription">Issue Description</label>
           <input type="text" name="issueDescription" id="issueDescription">
           <label for="issueSeverity">Issue Severity</label>
-          <select id="issueSeverity" name="issueSeverity">
+          <select id="issueSeverity">
             <option value="low">Low</option>
             <option value="medium">Medium</option>
             <option value="high">High</option>
           </select>
           <label for="issueOwner">Issue Owner</label>
           <input type="text" name="issueOwner" id="issueOwner">
-          <button>Add</button>
+          <button id="issue-add-cta">Add</button>
         </form>
       </div>
     </div>
-    <div id="issues-container">
-      <div class="issue">
-        <div class="id-status"><span class="id">654632136518445648984</span><span class="status">Open</span></div><span class="product-name">iOS App</span><span class="issue-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-        <div class="issue-severity-owner"><span class="issue-severity">High</span><span class="issue-owner">John Appleseed</span></div>
-      </div>
-    </div>
+    <div id="issues-container"></div>
     <footer><span class="copyright"><b>{one</b>and<b>zero}</b> @ 2017</span></footer>
     <!-- JS Scripts start-->
     <script type="text/javascript" src="http://chancejs.com/chance.min.js"></script>
