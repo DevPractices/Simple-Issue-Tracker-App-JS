@@ -10,6 +10,22 @@ var issueTrackerModule = (function(chancejs) {
    }
 
    /*
+   *  function for changing the status of issue to close
+   */
+   var closeIssue = function(issueId) {
+      console.log(issueId);
+      console.log('closed');
+   }
+
+   /*
+   *  function to delete issue
+   */
+   var deleteIssue = function(issueId) {
+      console.log(issueId);
+      console.log('deleted');
+   }
+
+   /*
    * function for fetching the issues from the local storage
    */
    var fetchIssues = function() {
@@ -39,9 +55,6 @@ var issueTrackerModule = (function(chancejs) {
                                           '<button id="delete-issue-cta">Delete</button>' +
                                        '</div>' +
                                     '</div>';
-         // Add event listeners to the cta buttons
-         document.getElementById('close-issue-cta').addEventListener('click', closeIssue);
-         document.getElementById('delete-issue-cta').addEventListener('click', deleteIssue);
       }
    }
 
